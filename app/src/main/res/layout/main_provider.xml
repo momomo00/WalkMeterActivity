@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalkMeterActivity">
+
+    <TextView
+        android:id="@+id/providerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="provider: "
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:id="@+id/providerResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="結果"
+        android:textSize="30sp"
+        android:layout_toRightOf="@id/providerText"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:id="@+id/latitude_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="latitude: "
+        android:textSize="20sp"
+        android:layout_below="@id/providerText"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:id="@+id/latitude_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="結果"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/latitude_text"
+        android:layout_alignTop="@id/latitude_text"/>
+    <TextView
+        android:id="@+id/longitude_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="longitude: "
+        android:textSize="20sp"
+        android:layout_below="@id/latitude_text"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:id="@+id/longitude_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="結果"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/longitude_text"
+        android:layout_alignTop="@id/longitude_text"/>
+</RelativeLayout>
